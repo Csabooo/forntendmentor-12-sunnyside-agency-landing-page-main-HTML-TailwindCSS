@@ -3,12 +3,23 @@ module.exports = {
     content: ["./*.{html,js}"],
     theme: {
       extend: {
+        letterSpacing: {
+          tightest: '-.075em',
+          tighter: '-.05em',
+          tight: '-.025em',
+          normal: '0',
+          wide: '.025em',
+          wider: '.05em',
+          widest: '.1em',
+          widest: '.25em',
+          widestwidest: "0.65rem"
+        },
         colors: {
           /*   ### Primary */
           "soft-red": "hsl(7, 99%, 70%)",
           "yellow": "hsl(51, 100%, 49%)",
           "dark-desaturated-cyan(graphic-design-text)": "hsl(167, 40%, 24%)",
-          "dark-blue(photography text)": "hsl(198, 62%, 26%)",
+          "dark-blue": "hsl(198, 62%, 26%)",
           "dark-moderate-cyan(footer)": "hsl(168, 34%, 41%)",
   
           /* ###Neutral */
