@@ -14,6 +14,11 @@ module.exports = {
           widest: '.25em',
           widestwidest: "0.65rem"
         },
+
+        scale: {
+          '300': '3',
+        },
+
         colors: {
           /*   ### Primary */
           "soft-red": "hsl(7, 99%, 70%)",
