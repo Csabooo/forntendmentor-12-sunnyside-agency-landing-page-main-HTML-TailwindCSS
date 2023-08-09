@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-serif;
+    @apply text-18;
+    @apply bg-white text-very-dark-desaturated-blue;
+  }
+
+  h1 {
+    @apply font-bold md:font-black md:text-5xl flex text-center items-center justify-center text-white text-4xl pt-28 uppercase leading-20 tracking-widestwidest;
+  }
+
+  h2 {
+    @apply text-3xl pb-8 md:text-3xl md:font-bold;
+  }
+
+  h4 {
+    @apply font-black text-sm text-very-dark-desaturated-blue tracking-wider;
+  }
+
+  footer {
+    @apply bg-teal-500 bg-opacity-60;
+  }
+
+  p {
+    @apply font-sans text-very-dark-grayish-blue pb-8 md:text-base;
+  }
+
+  small {
+    @apply text-grayish-blue font-sans;
+  }
+}
+
+header {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  height: 600px;
+}
+
+.hamburger-button {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  @apply bg-white;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+
+
+@layer components {
+  .navs {
+    @apply text-white pb-0 text-sm font-sans transition duration-700 ease-out  rounded-full px-5 py-2;
+  }
+
+  .navs:hover {
+    @apply font-serif text-sm bg-blue-200 bg-opacity-30 rounded-full px-5 py-2 uppercase;
+  }
+
+  .active {
+    @apply font-serif text-sm text-very-dark-desaturated-blue bg-white rounded-full px-5 py-2 uppercase;
+  }
+
+  .nav-hamburger {
+    @apply inline-block text-black pb-0 text-sm font-sans transition duration-700 ease-out rounded-full;
+  }
+
+  .active-yellow {
+    @apply font-serif text-sm text-very-dark-desaturated-blue bg-yellow rounded-full uppercase;
+  }
+}
+
+@media only screen and (min-width: 448px) {
+  header {
+    background-image: url("../images/mobile/image-header.jpg");
+    height: 800px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    background-image: url("../images/desktop/image-header.jpg");
+  }
+}

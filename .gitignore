@@ -15,5 +15,5 @@
 .DS_Store
 .prettierignore
 
-input.css
+
 node_modules
